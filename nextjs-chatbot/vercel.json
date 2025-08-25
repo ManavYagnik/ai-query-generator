@@ -4,6 +4,7 @@
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "devCommand": "npm run dev",
+  "rootDirectory": "nextjs-chatbot",
   "functions": {
     "src/app/api/**/*.js": {
       "runtime": "nodejs18.x"
