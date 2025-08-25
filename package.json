@@ -1,0 +1,14 @@
+{
+  "name": "ai-query-generator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd nextjs-chatbot && npm run build",
+    "dev": "cd nextjs-chatbot && npm run dev",
+    "start": "cd nextjs-chatbot && npm start",
+    "install": "cd nextjs-chatbot && npm install"
+  },
+  "dependencies": {
+    "next": "15.5.0"
+  }
+}
