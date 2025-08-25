@@ -23,3 +23,4 @@ export const extractTokenFromHeader = (authHeader) => {
   }
   return authHeader.substring(7);
 };
+

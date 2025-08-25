@@ -36,3 +36,4 @@ const messageSchema = new mongoose.Schema({
 messageSchema.index({ userId: 1, timestamp: 1 });
 
 export default mongoose.models.Message || mongoose.model('Message', messageSchema);
+

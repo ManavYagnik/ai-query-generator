@@ -49,3 +49,4 @@ userSchema.pre('findOneAndUpdate', function () {
 });
 
 export default mongoose.models.User || mongoose.model('User', userSchema);
+
