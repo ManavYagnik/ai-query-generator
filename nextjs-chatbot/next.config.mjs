@@ -1,16 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ['mongoose'],
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: '/api/:path*',
-      },
-    ];
-  },
+  serverExternalPackages: ['mongoose'],
   // Ensure fetch is available globally
   webpack: (config, { isServer }) => {
     if (isServer) {
@@ -20,6 +10,12 @@ const nextConfig = {
       });
     }
     return config;
+  },
+  // Add output configuration for better Vercel compatibility
+  output: 'standalone',
+  // Ensure proper handling of environment variables
+  env: {
+    CUSTOM_KEY: process.env.CUSTOM_KEY,
   },
 };
 
